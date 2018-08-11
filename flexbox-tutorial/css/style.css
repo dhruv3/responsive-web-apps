@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-start flex-end center space-around
+space-between space-evenly */
+  border:10px solid green;
+/*   flex-direction: column; */
+}
+
+.container > div{
+  border:5px dotted red;
+}
+
+.search{
+/*   margin-left: auto; */
+/*   
+  to make our elements responsive
+  this is shorthand for: flex-grow, flex-shrink, flex-basis
+  flex: 1; */
+}
+
+/* this makes search twice as wide as other elements 
+   in general practice you 'flex' one item and its size varies as so as to fill the container. other remain of fixed width
+*/
+.container > .search {
+  flex: 2;
+}
+
+/* vertical aligning or aligning across cross axis
+.container {
+  align-items: center; default value is 'stretch' which basically leads to occupy the entire container
+}
+
+.logout {
+  align-self: flex-start; flex-end is a value as well
+} */
+
+/* wrapping
+flex-wrap: nowrap this is the default value. in case container is not big enough to fit divs then it'll scale down the components.
+if you set it to 'wrap' then it will break line and move content to a new row */
+.container-wrap{
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-wrap > div{
+  width: 200px;
+  border:1px dotted red;
+}
+
+/* flex-grow, flex-shrink, flex-basis */
+.container-flex{
+  border: 5px solid #ff00ff;
+  display: flex;
+}
+.container-flex > div{
+  border:1px dotted red;
+  flex: 1
+}
+
+.container-flex > .home-flex {
+  flex-grow: 0;
+  flex-shrink: 5;
+  flex-basis: 200px;
+}
+
+.container-flex > .logout-flex {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 200px;
+}
+
+/* order prop can realign items. default value is 0 */
+.container-order {
+  border: 5px solid lightblue;
+  display: flex;
+}
+.container-order > div{
+  border:5px dotted green;
+  flex: 1
+}
+.item1 {
+  order: 1;
+}
+
+.item2 {
+  order: 0;
+}
+
+.item3 {
+  order: -1;
+}
