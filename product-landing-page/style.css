@@ -26,11 +26,11 @@ a {
   max-width: 300px;
 }
 
-#nav-header{
+#nav-bar{
   margin-left: auto;
 }
 
-#nav-header ul{
+#nav-bar ul{
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -49,6 +49,7 @@ a {
   margin-right: auto;
 }
 
+/* form */
 .form-container{
   display: flex;
   flex-direction: column;
@@ -64,7 +65,8 @@ a {
   width: 100px;
   margin-top: 5px;
 }
-
+/* form */
+/* features and video */
 #features{
   display: flex;
   flex-direction: column;
@@ -93,7 +95,8 @@ a {
 .product-video{
   margin-top: 20px;
 }
-
+/* features and video */
+/* prices */
 #pricing{
   width: 100%;
   display: flex;
@@ -137,3 +140,23 @@ a {
   background-color: gold;
   font-size: 20px;
 }
+/* prices */
+/* footer */
+#footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background-color: darkgrey;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+#nav-footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+}
+/* footer */
