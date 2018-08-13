@@ -12,17 +12,17 @@
     <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
     <nav id="nav-bar">
       <ul>
-        <li class="nav-link"><a href="#features">Features</a></li>
-        <li class="nav-link"><a href="#video">How It Works</a></li>
-        <li class="nav-link"><a href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#video">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
       </ul>
     </nav>
   </header>
   <div id="page-content">
-    <form id="form" class="form-container" action="https://www.freecodecamp.com/email-submit" method="post">
+    <form id="form" class="form-container" action="https://www.freecodecamp.com/email-submit">
       <h3>Handcrafted, home-made masterpieces</h3>
-      <input id="email" type="email" size="80" placeholder="Enter your email-address"/>
-      <button type="submit" id="submit" class="form-btn">GET STARTED</button>
+      <input name="email" id="email" type="email" size="80" placeholder="Enter your email-address" required/>
+      <input type="submit" id="submit" value="Get Started" class="form-btn"></input>
     </form>
     <section id="features">
       <div class="feature-desc">
@@ -53,8 +53,8 @@
         </div>
       </div>
     </section>
-    <div id="video" class="product-video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="product-video">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <article id="pricing">
       <div class="price-container">
@@ -103,3 +103,4 @@
     </footer>
   </div>
 </body>
+</html>
