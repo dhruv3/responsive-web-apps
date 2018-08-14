@@ -8,32 +8,32 @@
 </head>
 <body>
   <div id="container">
-    <h1>Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
     <div class="innerContainer">
-      <p>
+      <p id="description">
         Let us know how we can improve freeCodeCamp
       </p>
       <form id="survey-form">
         <div class="flexContainer">
-          <div id="name-label" class="label">
+          <label id="name-label" class="label">
             * Name:
-          </div>
+          </label>
           <div class="inputControl">
             <input id="name" placeholder="Enter your name" required />
           </div>
         </div>
         <div class="flexContainer">
-          <div id="email-label" class="label">
+          <label id="email-label" class="label">
             * Email:
-          </div>
+          </label>
           <div class="inputControl">
             <input id="email" type="email" placeholder="Enter your Email" required />
           </div>
         </div>
         <div class="flexContainer">
-          <div id="number-label" class="label">
+          <label id="number-label" class="label">
             * Age:
-          </div>
+          </label>
           <div class="inputControl">
             <input id="number" type="number" placeholder="Enter your age" min="10" max="100" required />
           </div>
@@ -43,7 +43,7 @@
             Which option best describes your current role?
           </div>
           <div class="inputControl">
-            <select>
+            <select id="dropdown">
               <option value="Student">Student</option>
               <option value="Full Time Job">Full Time Job</option>
               <option value="Full Time Learner">Full Time Learner</option>
@@ -57,13 +57,13 @@
             * How likely is that you would recommend freeCodeCamp to a friend?
           </div>
           <div class="inputControl radioGroup">
-            <input type="radio" id="Definitely" checked />
+            <input type="radio" id="Definitely" name="radio-buttons" checked />
             <label for="Definitely">Definitely</label>
             <br />
-            <input type="radio" id="Maybe" />
+            <input type="radio" id="Maybe" name="radio-buttons"/>
             <label for="Maybe">Maybe</label>
             <br />
-            <input type="radio" id="Not Sure" />
+            <input type="radio" id="Not Sure" name="radio-buttons"/>
             <label for="Not Sure">Not Sure</label>
             <br />
           </div>
