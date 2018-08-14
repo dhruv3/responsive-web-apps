@@ -24,7 +24,7 @@ body, html{
   display: flex;
 }
 
-select, input{
+input{
   height: 20px;
   min-width: 150px;
   padding: 5px;
@@ -35,6 +35,11 @@ select, input{
 
 select{
   height: 30px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  min-width: 150px;
 }
 
 .label{
@@ -47,4 +52,29 @@ select{
 .inputControl{
   flex-grow: 1;
   flex-basis: 50%;
+}
+
+.radioGroup label, .checkbox label{
+  position: relative;
+  bottom: 3px;
+}
+
+textarea{
+  margin-left: 10px;
+  min-width: 200px;
+  height: 60px;
+}
+
+.flexContainer.submitBtn{
+  justify-content: center;
+}
+.submitBtn button{
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
 }
