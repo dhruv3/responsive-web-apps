@@ -1,5 +1,50 @@
 body, html{
   height: 100%;
   background-color: #eee;
-  font-family: 'Lato', sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+#container, .innerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer{
+  width: 80%;
+  background-color: seashell;
+}
+
+#survey-form{
+  width: 100%;
+}
+
+.flexContainer{
+  display: flex;
+}
+
+select, input{
+  height: 20px;
+  min-width: 150px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+select{
+  height: 30px;
+}
+
+.label{
+  flex-grow: 1;
+  flex-basis: 50%;
+  text-align: end;
+  padding-top: 15px;
+}
+
+.inputControl{
+  flex-grow: 1;
+  flex-basis: 50%;
 }

@@ -7,5 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <div id="container">
+    <h1>Survey Form</h1>
+    <div class="innerContainer">
+      <p>
+        Let us know how we can improve freeCodeCamp
+      </p>
+      <form id="survey-form">
+        <div class="flexContainer">
+          <div id="name-label" class="label">
+            * Name:
+          </div>
+          <div class="inputControl">
+            <input id="name" placeholder="Enter your name" required />
+          </div>
+        </div>
+        <div class="flexContainer">
+          <div id="email-label" class="label">
+            * Email:
+          </div>
+          <div class="inputControl">
+            <input id="email" type="email" placeholder="Enter your Email" required />
+          </div>
+        </div>
+        <div class="flexContainer">
+          <div id="number-label" class="label">
+            * Age:
+          </div>
+          <div class="inputControl">
+            <input id="number" type="number" placeholder="Enter your age" min="10" max="100" required />
+          </div>
+        </div>
+        <div class="flexContainer">
+          <div class="label">
+            Which option best describes your current role?
+          </div>
+          <div class="inputControl">
+            <select>
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
