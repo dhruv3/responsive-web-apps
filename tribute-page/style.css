@@ -3,3 +3,35 @@ body, html{
   background-color: #eee;
   font-family: 'Lato', sans-serif;
 }
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#img-div{
+  width: 100%;
+  background: floralwhite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#image{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#tribute-info{
+  text-align: left;
+  max-width: 600px;
+}
+
+#tribute-info li{
+  margin-bottom: 10px;
+}
