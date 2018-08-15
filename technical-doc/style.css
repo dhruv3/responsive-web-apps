@@ -17,13 +17,26 @@ header{
   font-size: 1.8em;
 }
 
+code{
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
 .container{
   display: flex;
 }
 
 #navbar{
   flex-basis: 20%;
-  height: 100%;
   padding: 10px;
   border-right: 4px solid darkgrey;
 }
