@@ -1,5 +1,90 @@
 body, html{
   height: 100%;
-  background-color: #eee;
+  background-color: #fff;
   font-family: Helvetica, sans-serif;
+  margin: 0px;
+  color: ghostwhite;
+}
+
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #AA8B39;
+  height: 50px;
+}
+
+#navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+  justify-content: space-around;
+}
+
+#welcome-section{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  background-color: #236A62;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #AF5784;
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}
+.projectContainer{
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+.project{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project img{
+  max-width: 250px;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+.project a{
+  /* https://stackoverflow.com/questions/450903/how-to-make-div-not-larger-than-its-contents */
+  display: inline-block;
+}
+
+.project-desc{
+  text-align: center;
+  position: relative;
+  bottom: 8px;
+}
+
+#projects button{
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 60px;
+  width: 250px;
+  margin: 10px;
+  border: 0px solid;
 }
